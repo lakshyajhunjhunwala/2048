@@ -1,4 +1,4 @@
-Project 2 — Snake Game
+2048 game
 
 Files:
 - index.html — main page (open in browser)
