@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Project 2 — 2048 Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>2-4-8-16 — Project 2</h1>
+    <p class="subtitle">Swipe or use arrow keys to slide tiles. Combine tiles with the same number to create larger ones!</p>
+
+    <div class="game-area">
+      <div class="game-controls">
+        <div id="score">Score: 0</div>
+        <button id="undoBtn">↶ Undo</button>
+        <button id="restartBtn">New Game</button>
+      </div>
+      <div id="gameBoard" class="game-board"></div>
+      <div class="mobile-controls" aria-hidden="false">
+        <button data-dir="up">▲</button>
+        <div>
+          <button data-dir="left">◀</button>
+          <button data-dir="right">▶</button>
+        </div>
+        <button data-dir="down">▼</button>
+      </div>
+    </div>
+
+    <section class="instructions">
+      <h2>How to play</h2>
+      <ul>
+        <li>Use arrow keys or mobile buttons to slide tiles.</li>
+        <li>When two tiles with the same number touch, they merge into one.</li>
+        <li>Each merge adds the combined value to your score.</li>
+        <li>Game ends when there are no more possible moves.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Project 2 — 2048 Game • Created for you</p>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
