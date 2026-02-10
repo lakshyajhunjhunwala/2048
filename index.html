@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Project 2 — 2048 Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2048 Game</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <main class="container">
-    <h1>2-4-8-16 — Project 2</h1>
-    <p class="subtitle">Swipe or use arrow keys to slide tiles. Combine tiles with the same number to create larger ones!</p>
+    <h1>2-0-4-8 Game</h1>
+    <p class="subtitle">
+      Swipe or use arrow keys to slide tiles. Combine tiles with the same number to create larger ones!
+    </p>
 
     <div class="game-area">
       <div class="game-controls">
-        <div id="score">Score: 0</div>
+        <div id="score" aria-live="polite">Score: 0</div>
         <button id="undoBtn">↶ Undo</button>
         <button id="restartBtn">New Game</button>
       </div>
+
       <div id="gameBoard" class="game-board"></div>
+
       <div class="mobile-controls" aria-hidden="false">
         <button data-dir="up">▲</button>
         <div>
@@ -29,7 +34,7 @@
     </div>
 
     <section class="instructions">
-      <h2>How to play</h2>
+      <h2>How to Play</h2>
       <ul>
         <li>Use arrow keys or mobile buttons to slide tiles.</li>
         <li>When two tiles with the same number touch, they merge into one.</li>
@@ -39,7 +44,14 @@
     </section>
 
     <footer>
-      <p>Project 2 — 2048 Game • Created for you</p>
+      <p>
+        © 2026 Lakshya Jhunjhunwala •
+        <a href="https://github.com/lakshyajhunjhunwala/2-4-8-game"
+           target="_blank"
+           rel="noopener noreferrer">
+          GitHub Repo
+        </a>
+      </p>
     </footer>
   </main>
 
